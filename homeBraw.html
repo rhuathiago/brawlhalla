@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combos Brawlhalla</title>
+    <link rel="stylesheet" href="homeBraw.css">
+    <link rel="shortcut icon" href="perfilpersonagens/bodvar.png">
+</head>
+<body>
+
+    <div id="interface">
+        <header id="cabecalho">
+            <!--<h1>COMBOS</h1>-->
+            <!--<figure>
+                <img id="icone" src="_imagens/fotodetodos.png"> 
+            </figure>--> 
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li><a href="homeBraw.html">HOME</a></li>
+                    <li><a href="personagensBraw.html">PERSONAGENS</a></li>
+                    <li><a href="combosBraw.html">COMBOS</a></li>
+                    <li><a href="multimidia.html">CONTATO</a></li>
+                </ul>
+                      
+            </nav>
+                
+            
+        </header>
+        <section id="corpo">
+            <article id="armas">
+                <header>
+                        <h2>ESCOLHA SUA ARMA</h2>  
+                </header> 
+                <table id="armas">
+                    <tr>
+                        <td><a><img src="imagensarmas45/arco1.png" alt="arco"></a></td>
+                        <td><a><img src="imagensarmas45/lança1.png" alt="lança"></a></td>
+                        <td><a><img src="imagensarmas45/marreta1.png" alt="marreta"></a></td>
+                        <td><a><img src="imagensarmas45/foguete1.png" alt="foguete"></a></td>
+                        <td><a><img src="imagensarmas45/katar1.png" alt="katar"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a><img src="imagensarmas45/orbe1.png" alt="orbe"></a></td>
+                        <td><a><img src="imagensarmas45/greatsword1.png" alt="greatsword"></a></td>
+                        <td><a><img src="imagensarmas45/canhao1.png" alt="canhao"></a></td>
+                        <td><a><img src="imagensarmas45/espada1.png" alt="espada" id="espada"></a></td>
+                    </tr>
+                    <tr>  
+                        <td><a><img src="imagensarmas45/pistola1.png" alt="pistola"></a></td>
+                        <td><a><img src="imagensarmas45/foice1.png" alt="foice"></a></td>
+                        <td><a><img src="imagensarmas45/machado1.png" alt="machado"></a></td>     
+                        <td><a><img src="imagensarmas45/luvas1.png" alt="luvas"></a></td>
+                    </tr>
+                    </table>
+                    <div class="divEfeitos">
+                        <button id="arco" class="efeitos linhaUm colunaUm"></button> 
+                        <button id="lança" class="efeitos linhaUm colunaDois"></button> 
+                        <button id="marreta" class="efeitos linhaUm colunaTres"></button> 
+                        <button id="foguete" class="efeitos linhaUm colunaQuatro"></button> 
+                        <button id="katar" class="efeitos linhaUm colunaCinco"></button> 
+                        <button id="orbe" class="efeitos linhaDois colunaUm"></button> 
+                        <button id="greatsword" class="efeitos linhaDois colunaDois"></button> 
+                        <button id="canhao" class="efeitos linhaDois colunaTres"></button> 
+                        <button id="espada" class="efeitos linhaDois colunaQuatro"></button> 
+                        <button id="pistola" class="efeitos linhaTres colunaUm"></button> 
+                        <button id="foice" class="efeitos linhaTres colunaDois"></button> 
+                        <button id="machado" class="efeitos linhaTres colunaTres"></button> 
+                        <button id="luvas" class="efeitos linhaTres colunaQuatro"></button>    
+                    </div> 
+                                      
+            </article>
+            <article id="combos">
+                <h2>NOMENCLATURAS</h2>
+                <div text align="left">
+                    <b>NEUTRAL</b> = Ataque parado<br>
+                    <b>DOWN</b> = Ataque para baixo<br>
+                    <b>SIDE</b> = Ataque para os lados<br>
+                    <b>SIG</b> = Ataque pesado<br>
+                    <b>LIGHT</b> = Ataque leve<br>
+                    <b>AIR</b> = Junção dos ataques acima, porém no ar<br>
+                    <b>DASH</b> = Dá uma corrida para os lados<br>
+                    <b>THROW</b> = Jogar a arma<br>
+                    <b>GRAVITY-CANCEL</b> = Como o nome já, a gravidade é cancelada e você pode utilizar os ataques do chão no ar, é o mesmo botão do dash/esquiva
+                </div>
+            </article>
+        </section><!--
+        -->
+        <aside id="montarCombos">
+            <h2>MONTAR COMBOS</h2>
+            <div id="iconeArma"></div>
+            <div id="plataforma"><input type="checkbox" name="ps4" id="ps4">PS4
+                <input type="checkbox" name="xbox" id="xbox">Xbox One
+                <input type="checkbox" name="nintendo" id="nintendo">Nintendo Switch
+                <input type="checkbox" name="pc" id="pc">PC
+            </div>
+                    <table id="tabelaBotoes">
+                        <tr>
+                            <td><input type="button" value="N-Sig" class="bt-ataques" id="botao1/x" onclick="inserir(value)"></td>
+                            <td><input type="button" value="Air N-Sig" class="bt-ataques" id="botaoX^2" onclick="inserir(value)"></td>
+                            <td><input type="button" value="N-Light" class="bt-ataques" id="botaoDoisRaizDeX" onclick="inserir(num)"></td>
+                            <td><input type="button" value="Air N-Light" class="bt-ataques" id="botaoDivisao" onclick="inserir(num)"></td>
+                            <td><input type="button" value="Dash" class="bt-açoes" id="botaoDivisao" onclick="inserir(num)"></td>
+                        </tr>  
+                        <tr>
+                            <td><input type="button" value="D-Sig" class="bt-ataques" id="botao7" onclick="inserir(num)"></td>
+                            <td><input type="button" value="Air D-Sig" class="bt-ataques" id="botao8" onclick="inserir(num)"></td>
+                            <td><input type="button" value="D-Light" class="bt-ataques" id="botao9" onclick="inserir(num)"></td>
+                            <td><input type="button" value="Air D-Light" class="bt-ataques" id="botaoDivisao" onclick="inserir(num)"></td>
+                            <td><input type="button" value="Throw" class="bt-açoes" id="botaoX" onclick="inserir(num)"></td>
+                
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="S-Sig" class="bt-ataques" id="botao4" onclick="inserir(num)"></td>
+                            <td><input type="button" value="Air S-Sig" class="bt-ataques" id="botao5" onclick="inserir(num)"></td>
+                            <td><input type="button" value="S-Light" class="bt-ataques" id="botao6" onclick="inserir(num)"></td>
+                            <td><input type="button" value="Air S-Light" class="bt-ataques" id="botaoX" onclick="inserir(num)"></td>
+                            <td><input type="button" value="Apagar" class="bt-apagar" id="botaoX" onclick="inserir(num)"></td>
+                        </tr>
+                    </table>
+                    <table id="tabelaBotao">
+                        <tr>
+                            <td><input type="button" value="Gravity-Cancel" class="bt-isolado" id="botaoSubtracao" onclick="inserir(num)"></td>
+                        </tr>
+                    </table>
+                    <div id="resultado"><input type="text" name="visor" id="visor" autocomplete="off"></div>
+        </aside>
+        <footer id="rodape">
+        <p>Copyright &copy; 2020 - Rhuã Thiago<br>
+            Facebook | Instagram</p>    
+        </footer>          
+    </div> 
+    <script src="homeBraw.js"></script>
+</body>
+</html>

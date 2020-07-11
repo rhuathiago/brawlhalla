@@ -1,0 +1,208 @@
+/**@font-face {
+    font-family: 'FonteLogo';
+    src: url("_fonts/Montserrat-Light.ttf");
+}*/@font-face{
+    font-family: 'FonteLogoB';
+    src: url("fonts/eras-bold-itc.ttf");
+}
+body{
+    
+    background-repeat: no-repeat;
+    background-color: #007bff;
+    font-family: 'FonteLogo', sans-serif; 
+}div#interface{
+    width: 1000px;
+    background-color: white;
+    margin: -21px auto 0px auto;
+    padding: 30px 30px 10px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
+}nav#menu{
+    display: block;   
+}nav#menu ul{  
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -15px;
+    left: 647px;
+}nav#menu li{
+    font-weight: bold;
+    display: inline-block;
+    background-color: #0655aa;
+    color: black;
+    padding: 10px 17px 10px 17px;
+    margin: -1px;
+    transition: 1s;
+}nav#menu li:hover{
+    opacity: 1;
+    background-color: #022549;
+}nav#menu h1{
+    display: none;
+}nav#menu a {
+    color: white;
+    text-decoration: none;
+}nav#menu a:hover{
+    color: white;
+}header#cabecalho{
+    border-bottom: solid #d9dad9;
+    height: 80px;
+    background: url("imagensBraw/brawhalla1.png") no-repeat 0px 0px;
+}/**header#cabecalho h1{
+    font-size: 45pt;
+    font-family: 'FonteLogoB', sans-serif;
+    padding: 0px;
+    margin-bottom: 0px;
+    background: linear-gradient(to bottom,yellow,#fff788,#fff77a,#ffcd63,#ffcd63,#f43a3a,#f43a3a,#f43a3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: black;
+}**/header#cabecalho img#icone{
+    position: absolute;
+    right: 210px;
+    top: 60px;
+}section#corpo{
+    display: block;
+    float: left;
+    width: 480px;
+    padding: 10px;
+    text-align: center;
+}article#armas{
+    display: block;  
+}article#armas td{
+    display: inline-block;
+    padding: 8px 0px 8px 0px;
+    display: block;
+    float: left;
+    margin-right: 0px;
+    margin-left: 50px;
+    border-width: 0px;
+}article#armas h2{
+    font-family: 'FonteLogoB', sans-serif;
+    font-size: 20pt;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.733);
+    padding: 5px 0px 5px 10px;
+    margin: 0px 10px 10px 10px;
+}footer#rodape{
+    clear: both;
+    border-top: solid #d9dad9;
+}footer#rodape p{
+    text-align: center;
+}.divEfeitos{
+    position: absolute;
+}.linhaUm{
+    position: absolute;
+    bottom: 148px;
+    width: 45px;
+    height: 45px;     
+    border-radius: 2px 2px;
+}.linhaDois{
+    position: absolute;
+    bottom: 81px; 
+    width: 45px;
+    height: 45px;     
+    border-radius: 2px 2px;
+}.linhaTres{
+    position: absolute;
+    bottom: 14px; 
+    width: 45px;
+    height: 45px;     
+    border-radius: 2px 2px;    
+}.colunaUm{
+    left: 52px;
+}.colunaDois{
+    left: 147px;
+}.colunaTres{
+    left: 242px;
+}.colunaQuatro{
+    left: 337px;
+}.colunaCinco{
+    left: 432px;
+}.efeitos{
+    background-color: #70cad449;
+    opacity: 100%;
+    border: 0 none;
+    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.589);
+    outline: none;
+    cursor: pointer;
+}.efeitos:hover{
+    opacity: 100%;
+    background-color: transparent;
+    transition: all 0.1s;
+}.efeitos:active{
+    box-shadow: none;
+}article#combos{
+    display: block;
+    float: left;
+    margin: 0px;
+    width: 480px;
+    padding: 0px;
+    text-align: center;
+    border-top: solid #d9dad9;
+}article#combos h2{
+    font-family: 'FonteLogoB', sans-serif;
+    font-size: 20pt;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.733);
+    padding: 5px 0px 5px 10px;
+    margin: 10px 10px 10px 10px;    
+}aside#montarCombos{
+    border-left: solid #d9dad9;
+    text-align: center;
+    margin: 10px 0px 0px 520px;
+    padding: 0px 0px 390px;
+}aside#montarCombos h2{
+    font-family: 'FonteLogoB', sans-serif;
+    font-size: 20pt;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.733);
+    padding: 5px 0px 5px 0px;
+    margin: 0px 10px 10px 45px;    
+}div#iconeArma{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 9px 9px;
+}.bt-açoes, .bt-ataques, .bt-apagar{
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 88px;
+    margin: -1px;
+    padding: 5px;
+    border-radius: 5px 5px;
+    outline: 0 none;
+    border: 0 none;
+    cursor: pointer;
+}.bt-ataques{
+    background-color: rgba(128, 128, 128, 0.74);
+}.bt-açoes{
+    background-color: rgba(0, 0, 255, 0.397);
+}.bt-apagar{
+    background-color: rgba(255, 0, 0, 0.685);
+}.bt-isolado{
+    margin: -3px;
+    height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px 5px;
+    outline: 0 none;
+    border: 0 none;
+    cursor: pointer;
+    width: 454px;
+    background-color: rgba(0, 128, 0, 0.637);
+}div#plataforma{
+    margin: 20px;
+}input[type="text"]{
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: rgba(0, 0, 255, 0.164);
+    border-radius: 5px;
+    vertical-align: 90%;
+    font: 20pt 'FonteLogoB', sans-serif; 
+}table#tabelaBotoes, table#tabelaBotao{
+    margin: 0px 0px 0px 25px;
+}

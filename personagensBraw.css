@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("_fonts/Montserrat-Light.ttf");
+}@font-face{
+    font-family: 'FonteLogoB';
+    src: url("_fonts/eras-bold-itc.ttf");
+}
+body{
+    
+    background-repeat: no-repeat;
+    background-color: #007bff;
+    font-family: 'FonteLogo', sans-serif; 
+}div#interface{
+    width: 1000px;
+    background-color: white;
+    margin: -21px auto 0px auto;
+    padding: 30px 30px 10px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
+}nav#menu{
+    display: block;   
+}nav#menu ul{  
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -15px;
+    left: 551px;
+}nav#menu li{
+    font-weight: bold;
+    display: inline-block;
+    background-color: #0655aa;
+    color: black;
+    padding: 10px 17px 10px 17px;
+    margin: -1px;
+    transition: 1s;
+}nav#menu li:hover{
+    opacity: 1;
+    background-color: #022549;
+}nav#menu h1{
+    display: none;
+}nav#menu a {
+    color: white;
+    text-decoration: none;
+}nav#menu a:hover{
+    color: white;
+}header#cabecalho{
+    border-bottom: solid #d9dad9;
+    height: 80px;
+    background: url("imagensBraw/brawhalla1.png") no-repeat 0px 0px;
+}/**header#cabecalho h1{
+    font-size: 45pt;
+    font-family: 'FonteLogoB', sans-serif;
+    padding: 0px;
+    margin-bottom: 0px;
+    background: linear-gradient(to bottom,yellow,#fff788,#fff77a,#ffcd63,#ffcd63,#f43a3a,#f43a3a,#f43a3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: black;
+}**/header#cabecalho img#icone{
+    position: absolute;
+    right: 210px;
+    top: 60px;
+}section#corpo{
+    display: block;
+    float: left;
+    width: 480px;
+    padding: 10px;
+    text-align: center;
+}article#armas{
+    display: block;  
+}article#armas td{
+    display: inline-block;
+    padding: 8px 0px 8px 0px;
+    display: block;
+    float: left;
+    margin-right: 0px;
+    margin-left: 50px;
+    border-width: 0px;
+}article#armas h2{
+    font-family: 'FonteLogoB', sans-serif;
+    font-size: 20pt;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.733);
+    padding: 5px 0px 5px 10px;
+    margin: 0px 10px 10px 10px;
+}div#pesquisa{
+    text-align: left;
+    padding: 0px 0px 20px 8px;
+}.input-text{
+    height: 40px;
+    width: 300px;
+    font-size: 12pt;
+    margin: 0px 0px 0px 75px;
+}.bt-pesquisa{
+    padding: 0px 0px 16px 0px;
+    background: url("imagensBraw/lupaessa.jpg") no-repeat;
+    height:44px;
+    width: 44px;
+    border:0;
+    outline:0;
+    -moz-outline:0;
+    cursor:pointer;
+    opacity: 60%;
+}.bt-pesquisa:hover{
+    opacity: 1;
+    background-color: #a5a288;
+    transition: all 0.1s;
+}.bt-pesquisa:active{
+    background-color: transparent;
+}.linha{
+    position: relative;
+    bottom: 34px;
+    width: 30px;
+    height: 30px;     
+    border-radius: 2px 2px;
+}.efeitos{
+    background-color: #70cad449;
+    opacity: 100%;
+    border: 0 none;
+    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.589);
+    outline: none;
+    cursor: pointer;
+}.efeitos:hover{
+    opacity: 100%;
+    background-color: transparent;
+    transition: all 0.1s;
+}.efeitos:active{
+    box-shadow: none;
+}aside#montarCombos{
+    border-left: solid #d9dad9;
+    text-align: center;
+    margin: 10px 0px 0px 520px;
+    padding: 0px 0px 390px;
+}aside#montarCombos h2{
+    font-family: 'FonteLogoB', sans-serif;
+    font-size: 20pt;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.733);
+    padding: 5px 0px 5px 0px;
+    margin: 0px 10px 10px 45px;    
+}footer#rodape{
+    clear: both;
+    border-top: solid #d9dad9;
+}footer#rodape p{
+    text-align: center;
+}
